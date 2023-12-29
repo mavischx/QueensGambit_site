@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Queen's Gambit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    body,
+    html {
+      height: 100%;
+      color: rgb(61, 53, 31);
+      line-height: 1.8;
+      background-color: rgb(195, 179, 161);
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url('images/queens-gambit-PR-lessons.jpg');
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("images/bg.png");
+      min-height: 50px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("images/ep2b.webp");
+      min-height: 100px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-text-white" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="Characters.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> CHARACTERS</a>
+      <a href="Episode.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-list"></i> EPISODES</a>
+      <a href="Production.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-chevron-circle-right"></i>
+        PRODUCTION</a>
+      <a href="Review.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-comments"></i> REVIEW</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-mobile">
+      <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="Characters.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CHARACTERS</a>
+      <a href="Episode.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EPISODES</a>
+      <a href="Production.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PRODUCTION</a>
+      <a href="Review.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> REVIEW</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-hover-opacity-off " id="home">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white ">THE QUEEN'S GAMBIT</span>
+    </div>
+  </div>
+
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h2 class="w3-text-brown w3-center w3-wide">ABOUT</h2>
+    <p class="w3-center"><em>The Queen's Gambit is a 2020 American coming-of-age period drama streaming television
+        miniseries based on the 1983 novel of the same name by Walter Tevis. The title refers to the "Queen's Gambit", a
+        chess opening. The series was written and directed by Scott Frank, who created it with Allan Scott, who owns the
+        rights to the book. Beginning in the mid-1950s and proceeding into the 1960s, the story follows the life of Beth
+        Harmon (Anya Taylor-Joy), a fictional chess prodigy on her rise to the top of the chess world while struggling
+        with drug and alcohol dependency.
+
+        Netflix released The Queen's Gambit on October 23, 2020. After four weeks it had become Netflix's most-watched
+        scripted miniseries, making it Netflix's top program in 63 countries.[1][2] The series received critical
+        acclaim, with particular praise for Taylor-Joy's performance, the cinematography, and production values. It also
+        received a positive response from the chess community for its accurate depictions of high-level chess, and data
+        suggests that it increased public interest in the game.[3][4]
+
+        The Queen's Gambit won eleven Primetime Emmy Awards, including Outstanding Limited or Anthology Series, becoming
+        the first show on a streaming service to win the category.[5] The series also won two Golden Globe Awards: Best
+        Limited Series or Television Film and Best Actress – Miniseries or Television Film for Taylor-Joy. She also won
+        the Screen Actors Guild Award for Outstanding Performance by a Female Actor in a Miniseries or Television Movie.
+        bigger</em></p><br>
+
+    <p class="w3-center"><em>The Queen's Gambit follows the life of an orphan chess prodigy, Elizabeth Harmon, during
+        her quest to become an elite chess player while struggling with emotional problems, drugs and alcohol
+        dependency. The title of the series refers to a chess opening of the same name. The story is set in the
+        mid-1950s and 1960s.[6]
+
+        In 1950s Lexington, Kentucky, an eight-year-old Beth, having lost her mother in a car crash, is taken to an
+        orphanage where she is taught chess by the building's custodian, Mr. Shaibel. As was common at the time, the
+        orphanage dispenses daily tranquilizer pills to the girls to "balance their disposition",[7][8] which turns into
+        an addiction for Beth. She quickly becomes a strong chess player due to her visualization skills. A few years
+        later, Beth is adopted by childless suburban couple Alma and Allston Wheatley. As she adjusts to her new home,
+        Beth enters a chess tournament and wins despite having no prior experience in competitive chess. Alma is
+        initially resistant to Beth's interest in chess, but after Beth wins her first tournament, Alma is fully
+        supportive of her adoptive daughter's sojourns to enter various chess competitions. She develops friendships
+        with several people, including former Kentucky State Champion Harry Beltik, United States National Champion
+        Benny Watts, and journalist and fellow player D.L. Townes.
+
+        As Beth rises to the top of the chess world and reaps the financial benefits of her success, her drug and
+        alcohol dependency worsens. With help from her oldest friend Jolene, whom she grew up with in the orphanage, she
+        prepares for her biggest challenge yet, a major international chess tournament against the world's best players
+        in Moscow.</em></p>
+  </div>
+
+
+  <video width="100%" height="400" controls class="w3-center w3-margin-bottom">
+    <source src="video/videoB.mp4"
+      type="video/mp4">
+  </video>
+
+
+  <section class="w3-row-padding w3-padding-64">
+    <div class="w3-half w3-center">
+      <h2><b>SERIES INFORMATION</b></h2>
+      <div class="w3-container w3-margin">
+        <table class="w3-table w3-bordered w3-center w3-border w3-centered">
+          <tr>
+            <th class="w3-brown">First released</th>
+            <td class="w3-hover-pale-yellow">October 23, 2020</td>
+          </tr>
+          <tr>
+            <th class="w3-brown">Seasons</th>
+            <td class="w3-hover-pale-yellow">1</td>
+          </tr>
+          <tr>
+            <th class="w3-brown">Episodes</th>
+            <td class="w3-hover-pale-yellow">7</td>
+          </tr>
+          <tr>
+            <th class="w3-brown">Run time</th>
+            <td class="w3-hover-pale-yellow">46-67 minutes</td>
+          </tr>
+          <tr>
+            <th class="w3-brown">Genre</th>
+            <td class="w3-hover-pale-yellow">Drama</td>
+          </tr>
+          <tr>
+            <th class="w3-brown">Network</th>
+            <td class="w3-hover-pale-yellow">Netflix</td>
+          </tr>
+          <tr>
+            <th class="w3-brown">Distributor</th>
+            <td class="w3-hover-pale-yellow">Netflix</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="w3-half w3-center">
+      <h2><b>AWARDS</b></h2>
+      <div class="w3-container">
+        <table class="w3-table w3-bordered w3-border w3-centered">
+          <tr class="w3-brown">
+            <th>Year</th>
+            <th>Award</th>
+            <th>Category</th>
+            <th>Nominee(s) </th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td rowspan="2">2021</td>
+            <td rowspan="2">Golden Globe Awards</td>
+            <td>Best limited series or TV movie</td>
+            <td>The Queen's Gambit</td>
+            <td>won</td>
+          </tr>
+          <tr>
+            <td>Best actress in a limited series or TV movie</td>
+            <td>Anya Taylor-Joy</td>
+            <td>won</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">Series photos</h3>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <img src="images/cola.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m4">
+        <img src="images/colb.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m4">
+        <img src="images/colc.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m4">
+        <img src="images/cold.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m4">
+        <img src="images/cole.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+
+      <div class="w3-col m4">
+        <img src="images/colf.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+  <script>
+
+
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+      } else {
+        navbar.className = navbar.className.replace("w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
